@@ -18,13 +18,13 @@
   </style>
 </head>
 <body>
-  <header>
+  <header id="header">
     <img src="images/logo.svg" alt="Fylo Logo">
     <nav>
       <ul>
-        <li><a href="#">Feature</a></li>
-        <li><a href="#">Team   </a></li>
-        <li><a href="#">Sign In</a></li>
+        <li><a href="#features">Feature</a></li>
+        <li><a href="#team">Team   </a></li>
+        <li><a href="#call-to-action">Sign In</a></li>
       </ul>
     </nav>
   </header>
@@ -44,7 +44,7 @@
   </section>
   <main class="main">
   
-    <section class="features">
+    <section class="features" id="features">
       <div>
         <img src="images/icon-access-anywhere.svg" alt="access Icon">
         <h2>
@@ -111,7 +111,7 @@
       </div>
     </section>
   
-    <section class="testimonial">
+    <section class="testimonial" id="team">
       <img src="images/bg-quotes.png" class="quote" alt="image">
       <div class="box">
         <p>
@@ -154,7 +154,7 @@
   
   
   <footer class="footer">
-    <section class="call-to-action">
+    <section class="call-to-action" id="call-to-action">
       <h2>
         Get early access today
       </h2>
@@ -163,7 +163,7 @@
         questions, our support team would be happy to help you.
       </p>
       <div class="btn-input">
-        <input type="email" name="email" class="input" id="email">
+        <input type="email" name="email" class="input" id="email" placeholder="example@fylo.com">
         <button type="submit" class="btn">Get Started For Free</button>
       </div>
     </section>
@@ -182,7 +182,7 @@
         </div>
 
         <div>
-          <p><img src="images/icon-phone.svg" class="icons"  alt="phone"><span>+1-543-123-4567</span></p>
+          <p><img src="images/icon-phone.svg" class="icons"  alt="phone" ><span>+1-543-123-4567</span></p>
           <p><img src="images/icon-email.svg" class="icons" alt="email">example@fylo.com</p>
         </div>
     
@@ -205,11 +205,18 @@
         </ul>
       </div>
     </div>
-    
+    <span class="toTop"><a href="#header">Back to top</a> </span>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Abdulsalam</a>.
     </p>
   </footer>
+
+  <script>
+    let toScroll = document.querySelector('toTop');
+    toScroll.scrollIntoView({
+      behavior: 'smooth'
+    })
+  </script>
 </body>
 </html>
