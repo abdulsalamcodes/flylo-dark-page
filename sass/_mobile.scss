@@ -8,6 +8,11 @@
         justify-content: space-evenly;
     }
 
+    .message, {
+        grid-template-columns: 1fr;
+        padding: 5rem 0;    
+        }
+
     .call-to-action {
         width: 90%;
         right: 5%;
