@@ -1,0 +1,64 @@
+@media (max-width: 700px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .header {
+        width: 90%;
+
+        li {
+            margin-left: 5px;
+        }
+    }
+    .intro-section {
+
+        .text-area {
+            width: 90%;
+            margin: 2rem auto;
+        }
+    }
+
+   .main {
+    .main-wrapper {
+            .features {
+                padding: 0;
+            }
+            
+            .features, .message, .team {
+                grid-template-columns: 1fr;
+                padding: 5rem 0;    
+                }
+            .team {
+                padding-bottom: 15rem;
+            }    
+
+    }
+   }
+   .call-to-action {
+    width: 90%;
+    right: 5%;
+    left: 5%;
+    z-index: 2;
+
+    .inpemail {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    }
+    .footer {
+        .container { 
+            padding: 200px 2rem 5px;   
+            .footer-wrapper {
+                flex-direction: column;                
+                .flex-item-2 {
+                    text-align: left;
+                    padding: 1rem 0;
+                }
+                .flex-item {
+                    padding: 1rem 0;
+                    margin-left: 0;
+                }
+            }
+        
+        }
+    }
+}

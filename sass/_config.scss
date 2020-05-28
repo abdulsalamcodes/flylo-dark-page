@@ -1,0 +1,68 @@
+$intro-and-email-bg: hsl(217, 28%, 15%);
+$main-bg: hsl(218, 28%, 13%);
+$footer-bg: hsl(216, 53%, 9%);
+$testimonial-bg: hsl(219, 30%, 18%);
+$cyan-btn-bg: linear-gradient(90deg,hsl(198, 60%, 50% ) ,hsl(176, 68%, 64%) );
+$text-color: hsl(0, 0, 100%);
+$body-font-stack: 'Open sans', sans-serif;
+$header-font-stack: 400 'Raleway', sans-serif;
+
+
+$spaceamounts: (0,1,2,3,4,5,6,7);
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .mt-#{$space} {
+        margin: #{$space}rem 0 0 0;
+    }
+    .mb-#{$space} {
+        margin: 0 0 #{$space}rem 0;
+    }
+    .ml-#{$space} {
+        margin: 0 0 0 #{$space}rem;
+    }
+    .mr-#{$space} {
+        margin: 0 #{$space}rem 0 0;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .ms-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .pt-#{$space} {
+        padding: #{$space}rem 0 0 0;
+    }
+    .pb-#{$space} {
+        padding: 0 0 #{$space}rem 0;
+    }
+    .pl-#{$space} {
+        padding: 0 0 0 #{$space}rem;
+    }
+    .pr-#{$space} {
+        padding: 0 #{$space}rem 0 0;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+    .ps-#{$space} {
+        padding: 0 #{$space}rem;
+    }
+}
+.align-center {
+    text-align: center;
+    width: 90%;
+    margin: 7rem auto;
+}
+
+%display--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 2rem auto;
+}
