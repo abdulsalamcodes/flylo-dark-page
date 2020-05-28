@@ -72,9 +72,10 @@ body {
                 color: hsl(176, 68%, 64%);
                 padding: 0.25rem;
                 border-bottom: 2px solid hsl(176, 68%, 64%);
-]
+                font-weight: 600;
+
                 &:hover {
-                    color: darken($color: hsl(176, 68%, 64%), $amount: 10%); 
+                    color: darken($color: hsl(176, 68%, 64%), $amount: 20%); 
                 }
             }
             img {

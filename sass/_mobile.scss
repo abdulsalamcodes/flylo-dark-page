@@ -2,16 +2,18 @@
     body {
         font-size: 0.7rem;
     }
+    .main {
+        .main-wrapper {
+            width: 95%;
+            // margin: 0 auto;
+            }
+
+    }
     .flex-item {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-
-    .message, {
-        grid-template-columns: 1fr;
-        padding: 5rem 0;    
-        }
 
     .call-to-action {
         width: 90%;
@@ -20,10 +22,12 @@
         z-index: 2;
     
         .inpemail, .btn {
-            width: 90%;
-            margin: 10px 0 1px;
+            width: 60%;
+            margin: 1rem 0 1px;
         }
-        }
+
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -80,6 +84,12 @@
                 .flex-item {
                     padding: 1rem 0;
                     margin-left: 0;
+                }
+                .social-container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: start;
                 }
             }
         
